@@ -3,10 +3,10 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem;
+  height: 60rem;
 
   &__side {
-    height: 52rem;
+    height: 60rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -28,16 +28,16 @@
       &-1 {
         background-image: linear-gradient(
           to right bottom,
-          $color-orange-light,
-          $color-orange-dark
+          $color-blue-light,
+          $color-blue-dark
         );
       }
 
       &-2 {
         background-image: linear-gradient(
           to right bottom,
-          $primary-color-light,
-          $primary-color-dark
+          $color-blue-light,
+          $color-blue-dark
         );
       }
 
@@ -63,48 +63,19 @@
   &__picture {
     &--1 {
       background-size: cover;
-      height: 23rem; /* Increase height if necessary */
+      height: 22rem; /* Increase height if necessary */
       background-image: linear-gradient(
-          to right bottom,
-          $color-orange-light,
-          $color-orange-dark
-        ),
-        url(../img/nat-5.jpg);
-      background-blend-mode: screen;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    }
-
-    &--2 {
-      background-size: cover;
-      height: 23rem; /* Increase height if necessary */
-      background-image: linear-gradient(
-          to right bottom,
-          $primary-color-light,
-          $primary-color-dark
-        ),
-        url(../img/nat-6.jpg);
-      background-blend-mode: screen;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-    }
-
-    &--3 {
-      background-size: cover;
-      height: 23rem; /* Increase height if necessary */
-      background-image: linear-gradient(
-          to right bottom,
-          $color-blue-light,
-          $color-blue-dark
-        ),
-        url(../img/nat-7.jpg);
-      background-blend-mode: screen;
+        to right bottom,
+        $color-blue-light,
+        $color-blue-dark
+      );
+      //background-blend-mode: screen;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     }
   }
 
-  &__heading {
+  /* &__heading {
     font-size: 2.8rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -131,8 +102,8 @@
     &--2 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($primary-color-light, 85),
-        rgba($primary-color-dark, 0.85)
+        rgba($color-orange-light, 85),
+        rgba($color-orange-dark, 0.85)
       );
     }
 
@@ -143,18 +114,22 @@
         rgba($color-blue-dark, 0.85)
       );
     }
-  }
+  } */
 
   &__details {
-    padding: 3rem;
+    padding: 1rem;
+    padding-top: 1rem;
     ul {
       list-style: none;
-      width: 80%;
+      width: 90%;
       margin: 0 auto; //center inside center
       li {
         text-align: center;
         font-size: 1.5rem;
-        padding: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: .3rem;
+        padding-right: .3rem;
         font-weight: 700;
 
         &:not(:last-child) {
@@ -162,6 +137,17 @@
         }
       }
     }
+  }
+
+  .package_header {
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
   }
 
   //Back side styling
@@ -179,6 +165,8 @@
     text-align: center;
     margin-bottom: 8rem;
     color: $color-white;
+    font-size: 4rem;
+    font-weight: 900;
   }
 
   &__price-only {
@@ -187,8 +175,8 @@
   }
 
   &__price-value {
-    font-size: 5rem;
-    font-weight: 100;
+    font-size: 7rem;
+    font-weight: 900;
   }
 
   @media only screen and (max-width: 56.25em), only screen and(hover: none) {
@@ -260,4 +248,13 @@
       font-size: 4rem;
     }
   }
+}
+
+.note{
+  font-size: 1.2rem;
+}
+
+.noteitem{
+  display: flex;
+  flex-direction: column;
 }

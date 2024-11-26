@@ -16,10 +16,10 @@
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba($primary-color-light, 0.803),
-      rgba($primary-color-dark, 0.803)
+      rgba($primary-color-light, 0.3),
+      rgba($primary-color-dark, 0.3)
     ),
-    url(../../img/nat-4.jpg);
+    url(../../img/keyboard.png);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -78,10 +78,12 @@
       rgba($color-white, 0.9) 50%,
       transparent 50%
     ),
-    url(../img/nat-10.jpg);
+    url(../img/cover2.png);
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4remrgba ($color-black, 0.2);
+  background-position: center;
+
 
   @include respond(tab-land) {
     background-image: linear-gradient(
@@ -90,8 +92,10 @@
         rgba($color-white, 0.9) 65%,
         transparent 65%
       ),
-      url(../img/nat-10.jpg);
+      url(../img/cover2.png);
     background-size: cover;
+    background-position: center;
+
   }
 
   @include respond(tab-port) {
@@ -100,8 +104,11 @@
         rgba($color-white, 0.9) 0%,
         rgba($color-white, 0.9) 100%
       ),
-      url(../img/nat-10.jpg);
+      url(../img/cover2.png);
     background-size: cover;
+    background-position: center;
+
+    
   }
 
   &__form {

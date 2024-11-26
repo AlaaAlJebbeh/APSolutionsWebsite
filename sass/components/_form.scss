@@ -99,7 +99,21 @@
   &__radio-input:checked ~ &__radio-label &__radio-button::after {
     opacity: 1;
   }
+}
 
-  
+.contact{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
 
+  &__icon{
+    fill: $primary-color-light;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__info{
+    font-size: 2rem;
+    color: $primary-color;
+  }
 }
