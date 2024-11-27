@@ -170,11 +170,11 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -20vh; }
+  padding-bottom: 25rem;
+  padding-top: 5rem; }
   @media only screen and (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0; } }
+      margin-top: 0; } }
 
 .section-features {
   padding: 20rem 0;
@@ -834,16 +834,28 @@ body {
   background-color: transparent;
   display: flex;
   gap: 4rem;
-  justify-content: center; }
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  transition: background-color 0.3s ease;
+  /* Smooth transition for background color */
+  z-index: 10000; }
+  .headernavigation--scrolled {
+    background-color: rgba(33, 34, 98, 0.8);
+    /* Background color when scrolled */ }
   .headernavigation__item {
     color: #fff;
     font-size: 3rem;
     text-decoration: none;
-    padding: .5rem;
-    padding-left: 2rem;
-    padding-right: 2rem; }
+    padding: 0.5rem 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .headernavigation__item {
+        text-align: center; } }
     .headernavigation__item:hover {
       background-color: rgba(53, 140, 156, 0.7); }
+  @media only screen and (max-width: 56.25em) {
+    .headernavigation {
+      gap: 2rem; } }
 
 /*
 0    - 600px    Phone
@@ -914,13 +926,12 @@ Order: Base + typography > general layout + grid > page layout > components
   background-image: url(../../img/cover.png);
   background-size: cover;
   background-position: center;
-  position: relative; }
+  position: relative;
+  display: block; }
   @media only screen and (max-width: 37.5em) {
     .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
-      margin-bottom: 10rem;
-      height: 50vh; } }
+      height: 30vh;
+      margin-bottom: 2rem; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -942,6 +953,10 @@ Order: Base + typography > general layout + grid > page layout > components
   font-size: 4rem;
   color: white;
   font-weight: 900; }
+  @media only screen and (max-width: 56.25em) {
+    .slogan {
+      font-size: 3rem;
+      left: 2rem; } }
 
 .footer {
   background-color: #333;

@@ -5,11 +5,11 @@
   background-position: center;
   position: relative;
 
+  display: block;
+
   @include respond(phone) {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
-    margin-bottom: 10rem;
-    height: 50vh;
+    height: 30vh;
+    margin-bottom: 2rem;
   }
 
   &__logo-box {
@@ -40,5 +40,10 @@
   font-size: 4rem;
   color: white;
   font-weight: 900;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+    left: 2rem;
+  }
 
 }

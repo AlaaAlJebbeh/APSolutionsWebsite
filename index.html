@@ -17,15 +17,13 @@
     <title>APSolutions</title>
   </head>
   <body>
-    
-
+    <nav class="headernavigation">
+      <a href="#about-us" class="headernavigation__item">About Us</a>
+      <a href="#services" class="headernavigation__item">Our Services</a>
+      <a href="#section-tours" class="headernavigation__item">Packages</a>
+      <a href="#contact-us" class="headernavigation__item">Contact Us</a>
+    </nav>
     <header class="header">
-      <nav class="headernavigation">
-        <a href="#about-us" class="headernavigation__item">About Us</a>
-        <a href="#services" class="headernavigation__item">Our Services</a>
-        <a href="#section-tours" class="headernavigation__item">Packages</a>
-        <a href="#contact-us" class="headernavigation__item">Contact Us</a>
-      </nav>
       <div class="slogan">Perfection at it's Finest!</div>
     </header>
 
@@ -334,5 +332,15 @@
         </div>
       </section>
     </main>
+    <script>
+      document.addEventListener("scroll", function () {
+        const header = document.querySelector(".headernavigation");
+        if (window.scrollY > 50) {
+          header.classList.add("headernavigation--scrolled");
+        } else {
+          header.classList.remove("headernavigation--scrolled");
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,23 +1,33 @@
-.headernavigation{
+.headernavigation {
     width: 100%;
     background-color: transparent;
     display: flex;
     gap: 4rem;
     justify-content: center;
-    
-
-
-    &__item{
-        color: $color_white;
-        font-size: 3rem;
-        text-decoration: none;
-        padding: .5rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-
-        &:hover{
-            background-color: rgba($color-blue-light, .7);
-            
-        }
+    position: fixed;
+    top: 0;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    z-index: 10000;
+    &--scrolled {
+      background-color: rgba($primary-color ,0.8); /* Background color when scrolled */
     }
-}
+  
+    &__item {
+      color: $color_white;
+      font-size: 3rem;
+      text-decoration: none;
+      padding: 0.5rem 2rem;
+
+      @include respond(tab-port) {
+        text-align: center;
+    }
+  
+      &:hover {
+        background-color: rgba($color-blue-light, 0.7);
+      }
+    }
+    @include respond(tab-port) {
+        gap: 2rem;
+    }
+  }
+  
