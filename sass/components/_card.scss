@@ -11,15 +11,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 110%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
     overflow: hidden;
+    
 
     &--front {
       background-color: $color-white;
+      color: $primary-color;
     }
 
     &--back {
@@ -133,7 +135,7 @@
         font-weight: 700;
 
         &:not(:last-child) {
-          border-bottom: 1px solid $color-gray-light-2;
+          border-bottom: 1px solid $color-blue-light;;
         }
       }
     }
