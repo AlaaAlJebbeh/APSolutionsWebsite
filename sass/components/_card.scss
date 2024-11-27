@@ -179,6 +179,17 @@
     font-weight: 900;
   }
 
+  &__price-extra {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__price-service{
+    font-size: 1rem;
+    background-color: red;
+  }
+
   @media only screen and (max-width: 56.25em), only screen and(hover: none) {
     height: auto;
     border-radius: 3px;
