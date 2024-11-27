@@ -186,8 +186,13 @@
   }
 
   &__price-service{
-    font-size: 1rem;
-    background-color: red;
+    font-size: 1.4rem;
+    font-weight: 0;
+  }
+
+  &__price-extra{
+    font-size: 1.65rem;
+    font-weight: 900;
   }
 
   @media only screen and (max-width: 56.25em), only screen and(hover: none) {
@@ -268,4 +273,9 @@
 .noteitem{
   display: flex;
   flex-direction: column;
+}
+
+.extraServices{
+  position: absolute;
+  bottom: -100px;
 }

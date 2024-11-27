@@ -30,3 +30,15 @@
     text-align: center;
   }
 }
+
+.slogan {
+  position: absolute;
+  top: 50%;
+  left: 17rem;
+
+  transform: translatey(-50%);
+  font-size: 4rem;
+  color: white;
+  font-weight: 900;
+
+}

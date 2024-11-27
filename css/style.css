@@ -38,8 +38,7 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem; }
+  box-sizing: border-box; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -513,8 +512,11 @@ body {
     font-weight: 700;
     margin-bottom: 1rem; }
   .card__price-service {
-    font-size: 1rem;
-    background-color: red; }
+    font-size: 1.4rem;
+    font-weight: 0; }
+  .card__price-extra {
+    font-size: 1.65rem;
+    font-weight: 900; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
@@ -557,6 +559,10 @@ body {
 .noteitem {
   display: flex;
   flex-direction: column; }
+
+.extraServices {
+  position: absolute;
+  bottom: -100px; }
 
 .story {
   width: 75%;
@@ -925,6 +931,15 @@ Order: Base + typography > general layout + grid > page layout > components
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.slogan {
+  position: absolute;
+  top: 50%;
+  left: 17rem;
+  transform: translatey(-50%);
+  font-size: 4rem;
+  color: white;
+  font-weight: 900; }
 
 .footer {
   background-color: #333;
