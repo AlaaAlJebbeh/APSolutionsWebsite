@@ -1,0 +1,20 @@
+.headernavigation{
+    width: 100%;
+    background-color: $color-white;
+    height: 30%;
+    display: flex;
+    gap: 2rem;
+
+
+    &__item{
+        color: $primary-color;
+        font-size: 3rem;
+        text-decoration: none;
+        padding: .5rem;
+
+        &:hover{
+            background-color: rgba($color-blue-light, .7);
+            color: $color_white;
+        }
+    }
+}
